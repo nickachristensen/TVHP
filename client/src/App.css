@@ -1,5 +1,10 @@
 .App {
   text-align: center;
   color: #d4af37;
- background-color:black
+  background-color:black
+}
+
+.h1 {
+  font-size: 60px;
+  color: #d4af37;
 }

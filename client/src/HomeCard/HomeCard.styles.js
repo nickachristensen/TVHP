@@ -16,7 +16,7 @@ export const Card = styled.div`
   
     &:hover {
       transform: scale(1.02);
-      box-shadow: 0 3px 15px 8px #d4af37;
+      box-shadow: 0 3px 8px 8px rgba(212, 175, 55, .8);
     }
 
 
@@ -25,10 +25,10 @@ export const CardImg = styled.img`
 
   transition: transform 2s, filter 1.5s ease-in-out;
   transform-origin: center center;
-  filter: brightness(50%);
+  filter: brightness(100%);
 
   &:hover {
-    filter: brightness(100%);
+    filter: brightness(150%);
     transform: scale(1.3);
 }
 `

@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <h1>The Very High Priestess</h1>
+      <h1 className="h1">The Very High Priestess</h1>
       <Home/>
     </div>
     </BrowserRouter>
