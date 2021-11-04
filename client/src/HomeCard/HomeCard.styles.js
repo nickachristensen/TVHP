@@ -8,19 +8,20 @@ export const Wrapper = styled.div`
 
 export const Card = styled.div`
     overflow: hidden;
-    box-shadow: 0 2px 20px #181510;
+    box-shadow: 2px 5px 10px black;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    
     transition: transform 200ms ease-in;
   
 
   
     &:hover {
-      transform: scale(1.02);
-      box-shadow: 0 3px 8px 8px rgba(120, 95, 55, .8);
+      transform: scale(1.08);
+      box-shadow: 0px 0px 40px 8px rgba(120, 95, 55, .5);
     }
 
 
@@ -39,10 +40,11 @@ export const CardImg = styled.img`
 export const CardTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0;
-  padding-top: 15px;
-  text-align: center;
-  margin-bottom: 1rem;
-  color:#181510;
+  text-align: center;;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color:#A08C5B;
+  box-shadow: 2px 5px 10px black;
+  border-radius: 5px;
 `
 
