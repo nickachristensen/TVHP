@@ -5,12 +5,12 @@ import { Wrapper, Card, CardImg, CardTitle } from "./HomeCard.styles";
 
 const HomeCard = (props) => {
     return (
-        <div>
+        <Wrapper>
         <Card className="home_card">
             <CardImg className="home_card_img" src={props.img} alt={props.name}/>     
         </Card>
         <CardTitle>{props.name}</CardTitle>
-        </div>
+        </Wrapper>
     )
 }
 

@@ -2,14 +2,15 @@ import React from 'react'
 import { BrowserRouter } from "react-router-dom"
 import './App.css';
 import Home from './Home';
+import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <h1 className="h1">The Very High Priestess</h1>
+      <Header />
       <Home/>
-    </div>
+      <Footer />
     </BrowserRouter>
   );
 }
