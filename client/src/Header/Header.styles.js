@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     position: relative;
     padding: 0 20px;
     height: 235px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 70px rgba(0, 0, 0, 1);
     background-color:#181510;
 `;
 
