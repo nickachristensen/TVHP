@@ -1,4 +1,5 @@
 import React from 'react'
+import GlobalFonts from './fonts/fonts';
 import { BrowserRouter } from "react-router-dom"
 import './App.css';
 import Home from './Home';
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Home/>
       <Footer />
+      <GlobalFonts />
     </BrowserRouter>
   );
 }

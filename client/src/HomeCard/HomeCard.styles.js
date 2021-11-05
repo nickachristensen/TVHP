@@ -38,6 +38,7 @@ export const CardImg = styled.img`
 }
 `
 export const CardTitle = styled.h3`
+  font-family: 'boecklins universe';
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;;
