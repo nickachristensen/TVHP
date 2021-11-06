@@ -1,24 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import ArtCard from '../ArtCard';
 
-const Gallery = () => {
+import { Wrapper } from './Gallery.styles';
 
+const Gallery = () => {
 const [art, setArt] = useState([])
 
 useEffect(() => {
-    fetch('http://localhost:3000/art')
+    fetch('/gallery/')
     .then(resp => resp.json())
     .then(data => setArt(data))
 }, [])
 
 
-const artCards = art.map(item => 
-    <ArtCard key={item.id} art={item}/>)
+const artCards = art.map(art => 
+    <ArtCard key={art.id} art={art}/>)
 
     return (
-        <div>
+        <Wrapper>
         {artCards}
-        </div>
+        </Wrapper>
     );
     }
 
