@@ -4,22 +4,23 @@ import ArtCard from '../ArtCard';
 import { Wrapper } from './Gallery.styles';
 
 const Gallery = () => {
-const [art, setArt] = useState([])
+const [art, setArt] = useState([]);
 
 useEffect(() => {
-    fetch('/gallery/')
+    fetch('/arts/')
     .then(resp => resp.json())
     .then(data => setArt(data))
 }, [])
-
 
 const artCards = art.map(art => 
     <ArtCard key={art.id} art={art}/>)
 
     return (
+ 
         <Wrapper>
         {artCards}
         </Wrapper>
+
     );
     }
 

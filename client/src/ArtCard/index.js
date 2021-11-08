@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from "../Modal";
 
-import { Image } from './ArtCard.styles'
+import { Image, ModalImage, ModalTitle, ModalDescription } from './ArtCard.styles'
 
 const ArtCard = ({ art }) => {
-
-const { name, image, description } = art
+    const [isOpen, setOpen] = useState(false);
 
     return (
-
-        <Image src={image} alt={name}/>
+        <>
+        <Image src={art.image} alt={art.name} onClick={() => setOpen((isOpen) => !isOpen)}/>
+        <Modal isOpen={isOpen} close={() => setOpen(false)}> 
+            <ModalImage src={art.image} alt={art.name}/>
+            <ModalTitle>{art.name}</ModalTitle>
+            <ModalDescription>{art.description}</ModalDescription>    
+        </Modal>
+        </>
+        
 
     )                          
 }
