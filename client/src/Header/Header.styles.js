@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
 
 export const HeaderLogo = styled.img`
-    
+
     max-width: clamp 12%;
     max-height: 100%;
     position: relative;
