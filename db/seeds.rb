@@ -7,7 +7,7 @@ Product.destroy_all
 
 puts "Start seeding!"
 
-print "...seeding art!"
+puts "...seeding art!"
 
 Art.create(name: Faker::Cannabis.strain, image: "/images/art/1.JPG", description: Faker::Cannabis.health_benefit)
 Art.create(name: Faker::Cannabis.strain, image: "/images/art/2.JPG", description: Faker::Cannabis.health_benefit)
@@ -58,7 +58,7 @@ Art.create(name: Faker::Cannabis.strain, image: "/images/art/48.JPG", descriptio
 Art.create(name: Faker::Cannabis.strain, image: "/images/art/49.JPG", description: Faker::Cannabis.health_benefit)
 Art.create(name: Faker::Cannabis.strain, image: "/images/art/50.JPG", description: Faker::Cannabis.health_benefit)
 
-print "...seeding products!"
+puts "...seeding products!"
 
 Product.create(name: Faker::Creature::Cat.name, image: "/images/products/1.JPG", price:rand(20..30), description: Faker::Creature::Cat.breed)
 Product.create(name: Faker::Creature::Cat.name, image: "/images/products/2.JPG", price:rand(20..30), description: Faker::Creature::Cat.breed)
@@ -69,4 +69,4 @@ Product.create(name: Faker::Creature::Cat.name, image: "/images/products/6.JPG",
 Product.create(name: Faker::Creature::Cat.name, image: "/images/products/7.JPG", price:rand(20..30), description: Faker::Creature::Cat.breed)
 Product.create(name: Faker::Creature::Cat.name, image: "/images/products/8.JPG", price:rand(20..30), description: Faker::Creature::Cat.breed)
 
-print "...seeding done!"
+puts "...seeding done!"

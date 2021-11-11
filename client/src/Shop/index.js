@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Products from "../Products";
 import Basket from "../Basket";
 
@@ -29,7 +29,7 @@ const Shop = ({ products, cartItems, setCartItems }) => {
     return (
         <div className="row">
             {productCards}
-            <Basket onAdd={onAdd} onRemove={onRemove}cartItems={cartItems} />
+            <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
         </div>
     );
 }
