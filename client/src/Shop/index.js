@@ -2,6 +2,8 @@ import React from "react";
 import Products from "../Products";
 import Basket from "../Basket";
 
+import { Wrapper } from './Shop.styles';
+
 const Shop = ({ products, cartItems, setCartItems }) => {
 
     const onAdd = (product) => {
@@ -27,10 +29,10 @@ const Shop = ({ products, cartItems, setCartItems }) => {
         <Products onAdd={onAdd} key={product.id} product={product}/>)
 
     return (
-        <div className="row">
+        <Wrapper>
             {productCards}
             <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
-        </div>
+        </Wrapper>
     );
 }
 
