@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  font-family: 'boecklins universe';
+  color: #A08C5B;
+  `;
+
 export const ModalImage = styled.img`
   width: auto;
   max-height: 700px;

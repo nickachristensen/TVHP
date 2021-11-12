@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from "react-dom"
 
+import { Wrapper } from "./Basket.styles";
+
 const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });
 
 const Basket = ({ cartItems, onAdd, onRemove }) => {
@@ -24,6 +26,7 @@ const Basket = ({ cartItems, onAdd, onRemove }) => {
       }
 
     return (
+      <Wrapper>
         <aside className="block col-1">
         <h2>Cart Items</h2>
         <div>
@@ -61,6 +64,7 @@ const Basket = ({ cartItems, onAdd, onRemove }) => {
             </>
         )} 
         </aside>
+        </Wrapper>
     )
 }
 

@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import Modal from "../Modal";
 
-import { Image, ModalImage, ModalTitle, ModalDescription } from './Products.styles'
+import { Wrapper, Image, ModalImage, ModalTitle, ModalDescription } from './Products.styles'
 
 const Products = ({ product, onAdd }) => {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <>
+        <Wrapper>
         <Image src={product.image} alt={product.name} onClick={() => setOpen((isOpen) => !isOpen)}/>
         <h4>{product.name} | Price: ${product.price}</h4>
         <div>
@@ -19,7 +19,7 @@ const Products = ({ product, onAdd }) => {
             <ModalTitle>Price: ${product.price}</ModalTitle>
             <ModalDescription>{product.description}</ModalDescription>    
         </Modal>
-        </>
+        </Wrapper>
     )
 }
 

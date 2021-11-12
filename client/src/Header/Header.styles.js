@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
     height: 235px;
     box-shadow: 0 0 70px rgba(0, 0, 0, 1);
     background-color:#181510;
+    font-family: 'boecklins universe';
+    color: #A08C5B;
+  
 `;
 
 
