@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   padding-top: 100px;
   padding-bottom: 100px;
+  font-family: 'boecklins universe';
+  color: #A08C5B;
 `;
 
 

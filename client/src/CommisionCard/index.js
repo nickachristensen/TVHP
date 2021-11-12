@@ -44,13 +44,13 @@ const CommisionCard = () => {
                 <h1>Commisions</h1>
                 <p>If insterested in a commision please fill out and submit this form!</p>
                 <form ref={form} onSubmit={sendEmail}>
-                    <label for="fname">First name:</label>
+                    <label for="fname">First name: </label>
                     <input type="text" id="fname" name="fname" defaultValue="Jane" onChange={handleChange}></input>
-                    <label for="lname">Last name:</label>
+                    <label for="lname">Last name: </label>
                     <input type="text" id="lname" name="lname" defaultValue="Doe" onChange={handleChange}></input>
-                    <label for="email">Email:</label>
+                    <label for="email">Email: </label>
                     <input type="text" id="email" name="email" defaultValue="janedoe@gmail.com" onChange={handleChange}></input>
-                    <label for="description">Description:</label>
+                    <label for="description">Description: </label>
                     <textarea id="description" name="description" defaultValue="Type descrition of commision here!" rows="5" cols="40" onChange={handleChange}></textarea>
                     <input type="submit" value="Submit"></input>
                 </form>      

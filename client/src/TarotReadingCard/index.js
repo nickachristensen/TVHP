@@ -46,13 +46,13 @@ const TarotReadingCard = () => {
                 <h1>Tarot Reading</h1>
                 <p>If you're insterested in having me read cards at an event or in private please fill out and submit this form!</p>
                 <form ref={form} onSubmit={sendEmail}>
-                    <label for="fname">First name:</label>
+                    <label for="fname">First name: </label>
                     <input type="text" id="fname" name="fname" defaultValue="Jane" onChange={handleChange}></input>
-                    <label for="lname">Last name:</label>
+                    <label for="lname">Last name: </label>
                     <input type="text" id="lname" name="lname" defaultValue="Doe" onChange={handleChange}></input>
-                    <label for="email">Email:</label>
+                    <label for="email">Email: </label>
                     <input type="text" id="email" name="email" defaultValue="janedoe@gmail.com" onChange={handleChange}></input>
-                    <label for="description">Description:</label>
+                    <label for="description">Description: </label>
                     <textarea id="description" name="description" defaultValue="Type descrition of tarot event here!" rows="5" cols="40" onChange={handleChange}></textarea>
                     <input type="submit" value="Submit"></input>
                 </form>      

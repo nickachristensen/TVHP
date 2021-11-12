@@ -24,11 +24,14 @@ const Modal = ({ isOpen, close, children }) => {
     }, [isOpen, close]);
 
     if (!isOpen) return null;
-    return <Background>
+    return (
+    
+    <Background>
         <Content ref={contentRef}>
             {children}
         </Content>
     </Background>
+    );
 };
 
 export default Modal;
