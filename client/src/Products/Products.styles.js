@@ -4,6 +4,43 @@ export const Wrapper = styled.div`
   font-family: 'boecklins universe';
   `;
 
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+`;
+
+export const Title = styled.h1`
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  height: 2rem;
+  `;
+
+export const Button = styled.button`
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px;
+  height: 2rem;
+  font-family: 'boecklins universe';
+  box-shadow: 2px 5px 10px black;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+
+  `;
+
 export const ModalImage = styled.img`
   width: auto;
   max-height: 700px;
