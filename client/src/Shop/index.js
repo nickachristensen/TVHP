@@ -4,7 +4,7 @@ import Basket from "../Basket";
 
 import BackgroundImg from '../img/IMG_2227.JPG'
 
-import { Wrapper } from './Shop.styles';
+import { Wrapper, ProductStyle, CartStyle } from './Shop.styles';
 
 const Shop = ({ products, cartItems, setCartItems }) => {
 
@@ -32,9 +32,14 @@ const Shop = ({ products, cartItems, setCartItems }) => {
 
     return (
         <Wrapper img={BackgroundImg}>
+            <ProductStyle>
             {productCards}
+            </ProductStyle>
+            <CartStyle>
             <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
+            </CartStyle>        
         </Wrapper>
+
     );
 }
 

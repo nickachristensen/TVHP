@@ -28,9 +28,9 @@ const Basket = ({ cartItems, onAdd, onRemove }) => {
     return (
       <Wrapper>
         <aside className="block col-1">
-        <h2>Cart Items</h2>
+        <h2>Shopping Cart:</h2>
         <div>
-            {cartItems.length === 0 && <div>Cart Is Empty</div>}
+            {cartItems.length === 0 && <div>Shopping Cart Is Empty</div>}
         </div>
         {cartItems.map(item => (
             <div key={item.id}>
