@@ -21,8 +21,8 @@ export const Wrapper = styled.div`
 
 export const HeaderLogo = styled.img`
 
-    max-width: clamp 12%;
-    max-height: 100%;
+    width:  12%;
+    height: auto;
     position: relative;
     left: 0%;
 `;
@@ -31,12 +31,14 @@ export const Title = styled.h1`
     font-family: 'boecklins universe';
     position: relative;
     text-align: center;
-    font-size: 7rem;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
     flex: 1 0;
     color: white;
-    padding-right: 200px;
+    font-size: 5.5vw;
+    -webkit-text-stroke: .1px black;
+    padding-right: 180px;
+
 
 `;
