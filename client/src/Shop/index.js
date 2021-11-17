@@ -2,6 +2,8 @@ import React from "react";
 import Products from "../Products";
 import Basket from "../Basket";
 
+import BackgroundImg from '../img/IMG_2227.JPG'
+
 import { Wrapper } from './Shop.styles';
 
 const Shop = ({ products, cartItems, setCartItems }) => {
@@ -29,7 +31,7 @@ const Shop = ({ products, cartItems, setCartItems }) => {
         <Products onAdd={onAdd} key={product.id} product={product}/>)
 
     return (
-        <Wrapper>
+        <Wrapper img={BackgroundImg}>
             {productCards}
             <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
         </Wrapper>

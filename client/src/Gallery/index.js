@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ArtCard from '../ArtCard';
 
+import BackgroundImg from '../img/IMG_2227.JPG'
+
 import { Wrapper } from './Gallery.styles';
 
 const Gallery = () => {
@@ -17,7 +19,7 @@ const artCards = art.map(art =>
 
     return (
  
-        <Wrapper>
+        <Wrapper img={BackgroundImg}>
         {artCards}
         </Wrapper>
 

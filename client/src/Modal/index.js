@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from "react";
 
+import BackgroundImg from "../img/headerbg.jpg"
+
+
 import { Background, Content } from "./Modal.styles";
 
 
@@ -27,7 +30,7 @@ const Modal = ({ isOpen, close, children }) => {
     return (
     
     <Background>
-        <Content ref={contentRef}>
+        <Content ref={contentRef} img= {BackgroundImg}>
             {children}
         </Content>
     </Background>

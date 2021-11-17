@@ -6,4 +6,8 @@ export const Wrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
+    background-image: url(${props => props.img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 `;
