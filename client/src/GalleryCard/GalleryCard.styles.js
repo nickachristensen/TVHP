@@ -14,9 +14,13 @@ width: 300px;
     position: relative;
     transition: all 1s linear;
     transform-style: preserve-3d;
+    box-shadow: 2px 5px 10px black;
+    border-radius: 10px;
+    
   
     &:hover {
       transform: rotateY(180deg);
+    
     }
 
 
@@ -38,15 +42,18 @@ export const CardImg = styled.div`
 `
 export const CardBackImg = styled.div`
     background-image: url(${props => props.img});
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
-    height: 100%;
-    width: 100%;
+    height: 497px;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    border: 2px solid #181510;
+    
 
   z-index: 1;
   transform: rotateY(180deg);
@@ -63,5 +70,6 @@ export const CardTitle = styled.h3`
   color:#181510;
   box-shadow: 2px 5px 10px black;
   border-radius: 5px;
+  text-decoration: none;
 `
 

@@ -20,7 +20,7 @@ width: 300px;
   
     &:hover {
       transform: rotateY(180deg);
-      cursor: pointer;
+    
     }
 
 

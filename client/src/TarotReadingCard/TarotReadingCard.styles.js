@@ -3,52 +3,74 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   padding-top: 100px;
   padding-bottom: 100px;
-  font-family: 'boecklins universe';
-  color: #A08C5B;
+  
 `;
 
 
 export const Card = styled.div`
-    overflow: hidden;
-    box-shadow: 2px 5px 10px black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
-    
-    transition: transform 200ms ease-in;
-  
+height: 500px;
+width: 300px;
 
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    box-shadow: 2px 5px 10px black;
+    border-radius: 10px;
+    
   
     &:hover {
-      transform: scale(1.08);
-      box-shadow: 0px 0px 40px 8px rgba(120, 95, 55, .5);
+      transform: rotateY(180deg);
+      cursor: pointer;
+    
     }
 
 
     `;
-export const CardImg = styled.img`
+export const CardImg = styled.div`
+  background-image: url(${props => props.img});
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  max-height: 500px;
-  width: auto;
-  transition: transform 2s, filter 1.5s ease-in-out;
-  transform-origin: center center;
-  filter: brightness(100%);
-
-  &:hover {
-    filter: brightness(150%);
-    transform: scale(1.3);
-}
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    backface-visibility: hidden;
 `
+export const CardBackImg = styled.div`
+    background-image: url(${props => props.img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 497px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #181510;
+    
+
+  z-index: 1;
+  transform: rotateY(180deg);
+`
+
 export const CardTitle = styled.h3`
   font-family: 'boecklins universe';
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
-  text-align: center;;
+  text-align: center;
+  justify-content: center;
   padding-top: 5px;
   padding-bottom: 10px;
-  color:#A08C5B;
+  color:#181510;
   box-shadow: 2px 5px 10px black;
   border-radius: 5px;
+  text-decoration: none;
 `
+

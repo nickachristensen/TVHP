@@ -2,10 +2,11 @@ import React, { useState, useRef } from 'react'
 import emailjs from 'emailjs-com';
 import Modal from "../Modal";
 
-import CardBackImg from '../img/tarotback.jpg'
+import CardBack from '../img/tarotback.jpg'
+import CardFlip from '../img/RWS_Tarot_02_High_Priestess.jpg'
 
 //Styles
-import { Wrapper, Card, CardImg, CardTitle } from "./TarotReadingCard.styles";
+import { Wrapper, Card, CardImg, CardBackImg, CardTitle } from "./TarotReadingCard.styles";
 
 const TarotReadingCard = () => {
     const [isOpen, setOpen] = useState(false);
@@ -41,9 +42,9 @@ const TarotReadingCard = () => {
     return (
         <Wrapper>
         <Card className="tarot_reading_card">
-            <CardImg onClick={() => setOpen((isOpen) => !isOpen)} className="tarot_reading_card_img" src={CardBackImg} alt='Commisions'/>     
+            <CardImg className="tarot_reading_card_img" img={CardBack}></CardImg> 
+            <CardBackImg onClick={() => setOpen((isOpen) => !isOpen)} className="home_card_back_img" img={CardFlip}><CardTitle>Tarot Events</CardTitle></CardBackImg>    
         </Card>
-        <CardTitle>Tarot Reading</CardTitle>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 
                 <h1>Tarot Reading</h1>
                 <p>If you're insterested in having me read cards at an event or in private please fill out and submit this form!</p>

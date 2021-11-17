@@ -4,9 +4,9 @@ import CardBack from '../img/tarotback.jpg'
 import CardFlip from '../img/RWS_Tarot_03_Empress.jpg'
 
 //Styles
-import { Wrapper, Card, CardImg, CardBackImg, CardTitle } from "./HomeCard.styles";
+import { Wrapper, Card, CardImg, CardBackImg, CardTitle } from "./GalleryCard.styles";
 
-const HomeCard = (props) => {
+const GalleryCard = (props) => {
     return (
         <Wrapper>
         <Card className="home_card">
@@ -17,4 +17,4 @@ const HomeCard = (props) => {
     )
 }
 
-export default HomeCard;
+export default GalleryCard;
