@@ -12,3 +12,10 @@ export const Wrapper = styled.div`
   background-position: center;
   min-height: calc(100vh - 325px);
 `;
+
+export const Welcome = styled.div`
+ font-family: 'boecklins universe';
+ text-shadow: 0 0 10px black;
+ text-align: center;
+ max-width: 600px;
+`

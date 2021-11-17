@@ -6,6 +6,13 @@ export const Wrapper = styled.div`
   
 `;
 
+export const Content = styled.div`
+ font-family: 'boecklins universe';
+ text-shadow: 0 0 10px black;
+ justify-content: left;
+ max-width: 800px;
+`
+
 
 export const Card = styled.div`
 height: 500px;

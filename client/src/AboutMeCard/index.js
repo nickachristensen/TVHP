@@ -5,7 +5,7 @@ import CardBack from '../img/tarotback.jpg'
 import CardFlip from '../img/RWS_Tarot_19_Sun.jpg'
 
 //Styles
-import { Wrapper, Card, CardImg, CardBackImg, CardTitle } from "./AboutMeCard.styles";
+import { Wrapper, Content, Card, CardImg, CardBackImg, CardTitle } from "./AboutMeCard.styles";
 
 const AboutMeCard = () => {
     const [isOpen, setOpen] = useState(false);
@@ -17,8 +17,10 @@ const AboutMeCard = () => {
             <CardBackImg onClick={() => setOpen((isOpen) => !isOpen)} className="home_card_back_img" img={CardFlip}><CardTitle>About Me</CardTitle></CardBackImg>   
         </Card>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 
+            <Content>
                 <h1>About Me</h1>
                 <p>Hi I'm Anna!</p>
+            </Content>
         </Modal>
         </Wrapper>
     )

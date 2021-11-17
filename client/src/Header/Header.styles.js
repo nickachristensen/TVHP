@@ -12,20 +12,43 @@ export const Wrapper = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     font-family: 'boecklins universe';
     color: #A08C5B;
   
 `;
 
-
 export const HeaderLogo = styled.img`
-
-    width:  12%;
+    width:  100%;
     height: auto;
     position: relative;
     left: 0%;
+    padding: 0;
+    margin: 0;
+    display: block;
 `;
+
+export const HomeLogo = styled.img`
+    width:  50px;
+    height: auto;
+    padding: 10px;
+`;
+
+export const CartLogo = styled.img`
+    width:  50px;
+    height: auto;
+    padding: 10px;
+`;
+
+export const InstaLogo = styled.img`
+    width:  50px;
+    height: auto;
+    padding: 10px;
+    padding-right: 5px;
+`;
+
+export const LinkWrap = styled.a`
+    width:  12%;
+`
 
 export const Title = styled.h1`
     font-family: 'boecklins universe';
@@ -38,7 +61,5 @@ export const Title = styled.h1`
     color: white;
     font-size: 5.5vw;
     -webkit-text-stroke: .1px black;
-    padding-right: 180px;
-
-
+    text-shadow: 0 0 5px white;
 `;

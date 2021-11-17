@@ -6,7 +6,7 @@ import CardBack from '../img/tarotback.jpg'
 import CardFlip from '../img/RWS_Tarot_02_High_Priestess.jpg'
 
 //Styles
-import { Wrapper, Card, CardImg, CardBackImg, CardTitle } from "./TarotReadingCard.styles";
+import { Wrapper, Content, Card, CardImg, CardBackImg, CardTitle } from "./TarotReadingCard.styles";
 
 const TarotReadingCard = () => {
     const [isOpen, setOpen] = useState(false);
@@ -35,7 +35,7 @@ const TarotReadingCard = () => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
-        });
+        });setOpen(false);alert('Your email about your tarot event has been sent!');
     };
 
 
@@ -46,6 +46,7 @@ const TarotReadingCard = () => {
             <CardBackImg onClick={() => setOpen((isOpen) => !isOpen)} className="home_card_back_img" img={CardFlip}><CardTitle>Tarot Events</CardTitle></CardBackImg>    
         </Card>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 
+            <Content>
                 <h1>Tarot Reading</h1>
                 <p>If you're insterested in having me read cards at an event or in private please fill out and submit this form!</p>
                 <form ref={form} onSubmit={sendEmail}>
@@ -58,7 +59,8 @@ const TarotReadingCard = () => {
                     <label for="description">Description: </label>
                     <textarea id="description" name="description" defaultValue="Type descrition of tarot event here!" rows="5" cols="40" onChange={handleChange}></textarea>
                     <input type="submit" value="Submit"></input>
-                </form>      
+                </form> 
+            </Content>     
         </Modal>
         </Wrapper>
     )

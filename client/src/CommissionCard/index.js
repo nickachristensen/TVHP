@@ -6,9 +6,9 @@ import CardBack from '../img/tarotback.jpg'
 import CardFlip from '../img/Wands01.jpg'
 
 //Styles
-import { Wrapper, Card, CardImg, CardBackImg, CardTitle } from "./CommisionCard.styles";
+import { Wrapper, Content, Card, CardImg, CardBackImg, CardTitle } from "./CommissionCard.styles";
 
-const CommisionCard = () => {
+const CommissionCard = () => {
     const [isOpen, setOpen] = useState(false);
     const [formData, setFormData] = useState({
         fname: '',
@@ -34,18 +34,19 @@ const CommisionCard = () => {
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
-          });
+          });setOpen(false);alert('Your email about your commission has been sent!');
       };
 
     return (
         <Wrapper>
         <Card className="commision_card">
             <CardImg className="commision_card_img" img={CardBack}></CardImg>     
-            <CardBackImg onClick={() => setOpen((isOpen) => !isOpen)} className="home_card_back_img" img={CardFlip}><CardTitle>Commisions</CardTitle></CardBackImg>
+            <CardBackImg onClick={() => setOpen((isOpen) => !isOpen)} className="home_card_back_img" img={CardFlip}><CardTitle>Commissions</CardTitle></CardBackImg>
         </Card>
-        <Modal isOpen={isOpen} close={() => setOpen(false)}> 
-                <h1>Commisions</h1>
-                <p>If insterested in a commision please fill out and submit this form!</p>
+        <Modal isOpen={isOpen} close={() => setOpen(false)}>
+            <Content> 
+                <h1>Commissions</h1>
+                <p>If insterested in a commission please fill out and submit this form!</p>
                 <form ref={form} onSubmit={sendEmail}>
                     <label for="fname">First name: </label>
                     <input type="text" id="fname" name="fname" defaultValue="Jane" onChange={handleChange}></input>
@@ -56,10 +57,11 @@ const CommisionCard = () => {
                     <label for="description">Description: </label>
                     <textarea id="description" name="description" defaultValue="Type descrition of commision here!" rows="5" cols="40" onChange={handleChange}></textarea>
                     <input type="submit" value="Submit"></input>
-                </form>      
+                </form>
+              </Content>      
         </Modal>
         </Wrapper>
     )
 }
 
-export default CommisionCard;
+export default CommissionCard;
