@@ -66,6 +66,7 @@ export const CardBackImg = styled.div`
 `
 
 export const CardTitle = styled.h3`
+  display: flex;
   font-family: 'boecklins universe';
   font-size: 3rem;
   font-weight: bold;
@@ -73,9 +74,11 @@ export const CardTitle = styled.h3`
   justify-content: center;
   padding-top: 5px;
   padding-bottom: 10px;
-  color:#181510;
+  color:white;
+  background: rgba(0, 0, 0, 0.75);
   box-shadow: 2px 5px 10px black;
-  border-radius: 5px;
   text-decoration: none;
+  -webkit-text-stroke: .1px black;
+  text-shadow: 0 0 5px white;
+  width: 100%;
 `
-
