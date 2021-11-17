@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react'
 import emailjs from 'emailjs-com';
 import Modal from "../Modal";
 
+import CardBackImg from '../img/tarotback.jpg'
+
 //Styles
 import { Wrapper, Card, CardImg, CardTitle } from "./CommisionCard.styles";
 
@@ -37,7 +39,7 @@ const CommisionCard = () => {
     return (
         <Wrapper>
         <Card className="commision_card">
-            <CardImg onClick={() => setOpen((isOpen) => !isOpen)} className="commision_card_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/John_William_Waterhouse_-_Magic_Circle.JPG/250px-John_William_Waterhouse_-_Magic_Circle.JPG" alt='Commisions'/>     
+            <CardImg onClick={() => setOpen((isOpen) => !isOpen)} className="commision_card_img" src={CardBackImg} alt='Commisions'/>     
         </Card>
         <CardTitle>Commisions</CardTitle>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 

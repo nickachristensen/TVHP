@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Modal from "../Modal";
 
+import CardBackImg from '../img/tarotback.jpg'
+
 //Styles
 import { Wrapper, Card, CardImg, CardTitle } from "./AboutMeCard.styles";
 
@@ -10,7 +12,7 @@ const AboutMeCard = () => {
     return (
         <Wrapper>
         <Card className="about_me_card">
-            <CardImg onClick={() => setOpen((isOpen) => !isOpen)} className="about_me_card_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/John_William_Waterhouse_-_Magic_Circle.JPG/250px-John_William_Waterhouse_-_Magic_Circle.JPG" alt='Commisions'/>     
+            <CardImg onClick={() => setOpen((isOpen) => !isOpen)} className="about_me_card_img" src={CardBackImg} alt='Commisions'/>     
         </Card>
         <CardTitle>About Me</CardTitle>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 

@@ -30,6 +30,8 @@ export const Card = styled.div`
     `;
 export const CardImg = styled.img`
 
+  max-height: 500px;
+  width: auto;
   transition: transform 2s, filter 1.5s ease-in-out;
   transform-origin: center center;
   filter: brightness(100%);

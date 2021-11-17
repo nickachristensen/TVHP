@@ -5,21 +5,22 @@ import CommisionCard from '../CommisionCard'
 import TarotReadingCard from '../TarotReadingCard'
 import AboutMeCard from '../AboutMeCard'   
 
+import BackgroundImg from '../img/IMG_2227.JPG'
+import CardBackImg from '../img/tarotback.jpg'
+import CardFlip from '../img/RWS_Tarot_03_Empress.jpg'
 
 //Style
 import { Wrapper } from "./Home.styles";
 
 const Home = () => {
-
-    const Cardimg = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/John_William_Waterhouse_-_Magic_Circle.JPG/250px-John_William_Waterhouse_-_Magic_Circle.JPG"
-
+  
     return (
-        <Wrapper>
+        <Wrapper img={BackgroundImg}>
             <Link to='/gallery'> 
-                <HomeCard img= {Cardimg} name="Gallery"/> 
+                <HomeCard  name="Gallery"/> 
             </Link>
             <Link to='/shop'> 
-                <HomeCard img={Cardimg} name="Shop"/> 
+                <HomeCard  name="Shop"/> 
             </Link>
             <CommisionCard />
         <TarotReadingCard />
