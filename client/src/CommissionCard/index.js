@@ -6,7 +6,7 @@ import CardBack from '../img/tarotback.jpg'
 import CardFlip from '../img/Wands01.jpg'
 
 //Styles
-import { Wrapper, Content, Card, CardImg, CardBackImg, CardTitle } from "./CommissionCard.styles";
+import { Wrapper, Content, Card, CardImg, CardBackImg, CardTitle, P, Form, FormTitle, Button } from "./CommissionCard.styles";
 
 const CommissionCard = () => {
     const [isOpen, setOpen] = useState(false);
@@ -45,9 +45,9 @@ const CommissionCard = () => {
         </Card>
         <Modal isOpen={isOpen} close={() => setOpen(false)}>
             <Content> 
-                <h1>Commissions</h1>
-                <p>If insterested in a commission please fill out and submit this form!</p>
-                <form ref={form} onSubmit={sendEmail}>
+                <FormTitle>Commissions</FormTitle>
+                <P>If interested in a commission please fill out and submit this form!</P>
+                <Form ref={Form} onSubmit={sendEmail}>
                     <label for="fname">First name: </label>
                     <input type="text" id="fname" name="fname" defaultValue="Jane" onChange={handleChange}></input>
                     <label for="lname">Last name: </label>
@@ -55,9 +55,9 @@ const CommissionCard = () => {
                     <label for="email">Email: </label>
                     <input type="text" id="email" name="email" defaultValue="janedoe@gmail.com" onChange={handleChange}></input>
                     <label for="description">Description: </label>
-                    <textarea id="description" name="description" defaultValue="Type descrition of commision here!" rows="5" cols="40" onChange={handleChange}></textarea>
-                    <input type="submit" value="Submit"></input>
-                </form>
+                    <textarea id="description" name="description" defaultValue="Type the description of your commision here!" rows="5" cols="40" onChange={handleChange}></textarea>
+                    <Button type="submit" value="Submit">Submit</Button>
+                </Form>
               </Content>      
         </Modal>
         </Wrapper>

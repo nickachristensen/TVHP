@@ -3,9 +3,10 @@ import Modal from "../Modal";
 
 import CardBack from '../img/tarotback.jpg'
 import CardFlip from '../img/RWS_Tarot_19_Sun.jpg'
+import AboutMe from '../img/aboutme.JPG'
 
 //Styles
-import { Wrapper, Content, Card, CardImg, CardBackImg, CardTitle } from "./AboutMeCard.styles";
+import { Wrapper, Content, Card, CardImg, CardBackImg, CardTitle, Title, P, AboutMeImg } from "./AboutMeCard.styles";
 
 const AboutMeCard = () => {
     const [isOpen, setOpen] = useState(false);
@@ -18,8 +19,9 @@ const AboutMeCard = () => {
         </Card>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 
             <Content>
-                <h1>About Me</h1>
-                <p>Hi I'm Anna!</p>
+                <Title>About Me</Title>
+                <AboutMeImg src={AboutMe}/>
+                <P>Columbus native Anna VanWalsen is a traditional painter, illustrator, and fourth generation tarot card reader.  Her work uses street art aestetics to explore political as well mystic and occult subject matters.</P>  
             </Content>
         </Modal>
         </Wrapper>

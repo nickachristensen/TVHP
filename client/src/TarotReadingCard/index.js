@@ -6,7 +6,7 @@ import CardBack from '../img/tarotback.jpg'
 import CardFlip from '../img/RWS_Tarot_02_High_Priestess.jpg'
 
 //Styles
-import { Wrapper, Content, Card, CardImg, CardBackImg, CardTitle } from "./TarotReadingCard.styles";
+import { Wrapper, Content, Card, CardImg, CardBackImg, Form, FormTitle, Button, P, CardTitle } from "./TarotReadingCard.styles";
 
 const TarotReadingCard = () => {
     const [isOpen, setOpen] = useState(false);
@@ -30,7 +30,7 @@ const TarotReadingCard = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_4y7tc4j', 'template_tq5o7s6', form.current, 'user_N5u7K1vJl8lp6ZnSpwHm1')
+      emailjs.sendForm('service_4y7tc4j', 'template_tq5o7s6', form.current, 'user_N5u7FormTitlevJl8lp6ZnSpwHm1')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -47,9 +47,9 @@ const TarotReadingCard = () => {
         </Card>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 
             <Content>
-                <h1>Tarot Reading</h1>
-                <p>If you're insterested in having me read cards at an event or in private please fill out and submit this form!</p>
-                <form ref={form} onSubmit={sendEmail}>
+                <FormTitle>Tarot Reading</FormTitle>
+                <P>If you're interested in having me read cards at an event please fill out and submit this form!</P>
+                <Form ref={form} onSubmit={sendEmail}>
                     <label for="fname">First name: </label>
                     <input type="text" id="fname" name="fname" defaultValue="Jane" onChange={handleChange}></input>
                     <label for="lname">Last name: </label>
@@ -57,9 +57,9 @@ const TarotReadingCard = () => {
                     <label for="email">Email: </label>
                     <input type="text" id="email" name="email" defaultValue="janedoe@gmail.com" onChange={handleChange}></input>
                     <label for="description">Description: </label>
-                    <textarea id="description" name="description" defaultValue="Type descrition of tarot event here!" rows="5" cols="40" onChange={handleChange}></textarea>
-                    <input type="submit" value="Submit"></input>
-                </form> 
+                    <textarea id="description" name="description" defaultValue="Type the description of  your tarot event here!" rows="5" cols="40" onChange={handleChange}></textarea>
+                    <Button type="submit" value="Submit">Submit</Button>
+                </Form> 
             </Content>     
         </Modal>
         </Wrapper>

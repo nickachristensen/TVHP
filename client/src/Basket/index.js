@@ -5,7 +5,7 @@ import { Wrapper } from "./Basket.styles";
 
 const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });
 
-const Basket = ({ cartItems, onAdd, onRemove }) => {
+const Basket = ({ setCartItems, cartItems, onAdd, onRemove }) => {
     const itemsPrice = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)
     const taxPrice = itemsPrice * 0.08;
     const totalPrice = itemsPrice + taxPrice;

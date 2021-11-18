@@ -82,3 +82,40 @@ export const CardTitle = styled.h3`
   text-shadow: 0 0 5px white;
   width: 100%;
 `
+
+export const Title = styled.h3`
+  display: flex;
+  font-family: 'boecklins universe';
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  color:white;
+  -webkit-text-stroke: .1px black;
+  text-shadow: 0 0 5px white;
+`
+
+export const P = styled.p`
+  font-family: 'boecklins universe';
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color:white;
+  text-shadow: 0 0 5px black;
+`
+export const AboutMeImg = styled.img`
+  width: auto;
+  max-height: 500px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+
+`
