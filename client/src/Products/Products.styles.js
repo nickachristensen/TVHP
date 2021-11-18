@@ -24,7 +24,6 @@ export const Title = styled.h1`
 
 export const Button = styled.button`
   background-color: black;
-  border: none;
   border-radius: 5px;
   color: white;
   font-size: 1rem;
@@ -33,10 +32,12 @@ export const Button = styled.button`
   height: 2rem;
   font-family: 'boecklins universe';
   box-shadow: 2px 5px 10px black;
+  border: 1px solid white;
 
   &:hover {
     background-color: white;
     color: black;
+    border: 1px solid black;
   }
 
   `;

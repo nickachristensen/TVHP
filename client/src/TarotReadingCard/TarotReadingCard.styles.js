@@ -99,8 +99,6 @@ export const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 5px 10px black;
   border-radius: 10px;
   text-shadow: 0 0 5px black;
   border-radius: 10px;

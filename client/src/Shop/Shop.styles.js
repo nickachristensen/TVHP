@@ -13,7 +13,6 @@ export const ProductStyle = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
     overflow : auto;
     height: 680px;
 `;

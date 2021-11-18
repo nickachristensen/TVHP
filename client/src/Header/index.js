@@ -26,7 +26,8 @@ const Header = ({ countCartItems }) => {
             <div>
             <Link to= '/shop'>
                 <CartLogo src={CartLogoImg} alt="Shop"/>
-                </Link> { ' '}
+            </Link> 
+            { ' '}
                 {countCartItems ? (
                     <button>{countCartItems}</button>
                 ) : (

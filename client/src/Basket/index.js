@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from "react-dom"
 
-import { Wrapper } from "./Basket.styles";
+import { Wrapper, Title, Content, Button } from "./Basket.styles";
 
 const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });
 
@@ -28,9 +28,10 @@ const Basket = ({ setCartItems, cartItems, onAdd, onRemove }) => {
     return (
       <Wrapper>
         <aside className="block col-1">
-        <h2>Shopping Cart:</h2>
+        <Title>Shopping Cart</Title>
+        <Content>
         <div>
-            {cartItems.length === 0 && <div>Shopping Cart Is Empty</div>}
+            {cartItems.length === 0 && <div>Your Shopping Cart Is Empty</div>}
         </div>
         {cartItems.map(item => (
             <div key={item.id}>
@@ -38,8 +39,8 @@ const Basket = ({ setCartItems, cartItems, onAdd, onRemove }) => {
                     {item.name}
                 </div>
                 <div>
-                    <button onClick={() => onAdd(item)}>+</button>
-                    <button onClick={() => onRemove(item)}>-</button>
+                    <Button onClick={() => onAdd(item)}>+</Button>
+                    <Button onClick={() => onRemove(item)}>-</Button>
                 </div>
             <div>
                 {item.quantity} x ${item.price.toFixed(2)}
@@ -62,7 +63,8 @@ const Basket = ({ setCartItems, cartItems, onAdd, onRemove }) => {
                 />
             </div>
             </>
-        )} 
+        )}
+        </Content> 
         </aside>
         </Wrapper>
     )
