@@ -44,10 +44,10 @@ const CommissionCard = () => {
             <CardBackImg onClick={() => setOpen((isOpen) => !isOpen)} className="home_card_back_img" img={CardFlip}><CardTitle>Commissions</CardTitle></CardBackImg>
         </Card>
         <Modal isOpen={isOpen} close={() => setOpen(false)}>
-            <Content> 
+        <Content>
                 <FormTitle>Commissions</FormTitle>
-                <P>If interested in a commission please fill out and submit this form!</P>
-                <Form ref={Form} onSubmit={sendEmail}>
+                <P>If you're interested in a commission please fill out and submit this form!</P>
+                <Form ref={form} onSubmit={sendEmail}>
                     <label for="fname">First name: </label>
                     <input type="text" id="fname" name="fname" defaultValue="Jane" onChange={handleChange}></input>
                     <label for="lname">Last name: </label>
@@ -55,10 +55,10 @@ const CommissionCard = () => {
                     <label for="email">Email: </label>
                     <input type="text" id="email" name="email" defaultValue="janedoe@gmail.com" onChange={handleChange}></input>
                     <label for="description">Description: </label>
-                    <textarea id="description" name="description" defaultValue="Type the description of your commision here!" rows="5" cols="40" onChange={handleChange}></textarea>
+                    <textarea id="description" name="description" defaultValue="Type the description of your commission here!" rows="5" cols="40" onChange={handleChange}></textarea>
                     <Button type="submit" value="Submit">Submit</Button>
-                </Form>
-              </Content>      
+                </Form> 
+            </Content>       
         </Modal>
         </Wrapper>
     )

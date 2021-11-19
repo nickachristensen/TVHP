@@ -28,15 +28,15 @@ const TarotReadingCard = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_4y7tc4j', 'template_tq5o7s6', form.current, 'user_N5u7FormTitlevJl8lp6ZnSpwHm1')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });setOpen(false);alert('Your email about your tarot event has been sent!');
-    };
+        e.preventDefault();
+    
+        emailjs.sendForm('service_4y7tc4j', 'template_tq5o7s6', form.current, 'user_N5u7K1vJl8lp6ZnSpwHm1')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });setOpen(false);alert('Your email about your commission has been sent!');
+      };
 
 
     return (
@@ -57,7 +57,7 @@ const TarotReadingCard = () => {
                     <label for="email">Email: </label>
                     <input type="text" id="email" name="email" defaultValue="janedoe@gmail.com" onChange={handleChange}></input>
                     <label for="description">Description: </label>
-                    <textarea id="description" name="description" defaultValue="Type the description of  your tarot event here!" rows="5" cols="40" onChange={handleChange}></textarea>
+                    <textarea id="description" name="description" defaultValue="Type the description of your tarot event here!" rows="5" cols="40" onChange={handleChange}></textarea>
                     <Button type="submit" value="Submit">Submit</Button>
                 </Form> 
             </Content>     
@@ -67,3 +67,4 @@ const TarotReadingCard = () => {
 }
 
 export default TarotReadingCard;
+

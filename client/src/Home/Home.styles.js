@@ -18,4 +18,5 @@ export const Welcome = styled.div`
  text-shadow: 0 0 10px black;
  text-align: center;
  max-width: 600px;
+
 `
