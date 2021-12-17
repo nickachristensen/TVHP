@@ -9,4 +9,9 @@ export const Wrapper = styled.div`
     background-image: url(${props => props.img});
     background-size: contain;
     background-position: center;
+
+    @media (max-width: 600px) {
+    background-size: initial;
+    background-repeat: repeat;
+  }
 `;
