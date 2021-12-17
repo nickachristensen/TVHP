@@ -10,7 +10,7 @@ import Modal from "../Modal";
 import BackgroundImg from '../img/IMG_2227.JPG'
 
 //Style
-import { Wrapper, Welcome } from "./Home.styles";
+import { Wrapper, Welcome, Cards } from "./Home.styles";
 
 const Home = () => {
     const [isOpen, setOpen] = useState(false);
@@ -29,6 +29,7 @@ const Home = () => {
   
     return (
         <Wrapper img={BackgroundImg}>
+            <Cards>
             <Link to='/gallery' style={{ textDecoration: 'none' }}> 
                 <GalleryCard  name="Gallery"/> 
             </Link>
@@ -45,6 +46,7 @@ const Home = () => {
                 <p>- Anna</p>
             </Welcome>  
         </Modal>
+            </Cards>
         </Wrapper>
     )
     }
