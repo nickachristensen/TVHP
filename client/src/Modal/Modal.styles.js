@@ -29,5 +29,6 @@ export const Content = styled.div`
 
     @media (max-width: 600px) {
        width: 80%;
+       max-height: 90%;
     }
     `;

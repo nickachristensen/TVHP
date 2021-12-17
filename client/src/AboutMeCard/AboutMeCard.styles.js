@@ -104,6 +104,10 @@ export const P = styled.p`
   padding-bottom: 10px;
   color:white;
   text-shadow: 0 0 5px black;
+
+  @media (max-width: 600px) {
+    font-size: 1.3rem;
+  }
 `
 export const AboutMeImg = styled.img`
   width: auto;
@@ -117,5 +121,9 @@ export const AboutMeImg = styled.img`
   margin-left: auto;
   margin-right: auto;
   border: 2px solid white;
+
+  @media (max-width: 600px) {
+    max-width: 300px;
+  }
 
 `
