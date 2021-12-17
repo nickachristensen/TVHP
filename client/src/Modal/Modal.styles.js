@@ -26,5 +26,8 @@ export const Content = styled.div`
     box-shadow: 0 3px 15px 8px rgba(0, 0, 0, 0.2);
     color: white;
     border: 2px solid white;
-    
+
+    @media (max-width: 600px) {
+       width: 80%;
+    }
     `;
