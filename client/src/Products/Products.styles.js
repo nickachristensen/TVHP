@@ -8,8 +8,6 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
 `;
 
 export const Title = styled.h1`
@@ -19,7 +17,6 @@ export const Title = styled.h1`
   padding: 5px;
   text-align: center;
   width: 100%;
-  height: 2rem;
   `;
 
 export const Button = styled.button`
@@ -39,7 +36,7 @@ export const Button = styled.button`
     color: black;
     border: 1px solid black;
   }
-
+  
   `;
 
 export const ModalImage = styled.img`

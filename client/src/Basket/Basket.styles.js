@@ -9,6 +9,10 @@ export const Wrapper = styled.div`
   margin: 5px;
   overflow : auto;
   height: 650px;
+
+  @media (max-width: 600px) {
+    max-height: 300px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -28,6 +32,7 @@ export const Content = styled.div`
   height: 100%;
   font-size: 1em;
   text-shadow: 0 0 5px black;
+
 `;
 
 export const Button = styled.button`
