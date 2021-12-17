@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { HeaderLogo, HomeLogo, CartLogo, InstaLogo, LinkWrap, Title, Wrapper } from './Header.styles';
+import { HeaderLogo, Buttons, HomeLogo, CartLogo, InstaLogo, LinkWrap, Title, Wrapper } from './Header.styles';
 import Logo from "../img/IMG_2226.PNG"
 import Background from "../img/headerbg.jpg"
 import HomeLogoImg from "../img/homeicon.png"
@@ -20,6 +20,7 @@ const Header = ({ countCartItems }) => {
             <Title>
                 The Very High Priestess   
             </Title>
+            <Buttons>
             <Link to= '/'>
             <HomeLogo src={HomeLogoImg} alt="homebackground"/>
             </Link>
@@ -37,6 +38,7 @@ const Header = ({ countCartItems }) => {
             <a href='https://www.instagram.com/annavanglamazon/'>
             <InstaLogo src={InstaLogoImg} alt="instagram"/>
             </a>
+            </Buttons>
         </Wrapper>
     );
     }

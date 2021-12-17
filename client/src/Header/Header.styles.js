@@ -14,7 +14,15 @@ export const Wrapper = styled.div`
     background-repeat: no-repeat;
     font-family: 'boecklins universe';
     color: #A08C5B;
-  
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0;
+    }
 `;
 
 export const HeaderLogo = styled.img`
@@ -25,6 +33,35 @@ export const HeaderLogo = styled.img`
     padding: 0;
     margin: 0;
     display: block;
+
+    @media (max-width: 600px) {
+        width:  200px;
+        height: auto;
+        position: relative;
+        align-items: center;
+        left: -150%;
+        padding-top: 10px;
+        margin: 0;
+        display: block;
+        
+    }
+`;
+export const Buttons = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0%;
+    }
 `;
 
 export const HomeLogo = styled.img`
@@ -62,4 +99,9 @@ export const Title = styled.h1`
     font-size: 5.5vw;
     -webkit-text-stroke: .1px black;
     text-shadow: 0 0 5px white;
+
+    @media (max-width: 600px) {
+        font-size: 14vw;
+    }
+
 `;
