@@ -42,6 +42,11 @@ export const Button = styled.button`
 export const ModalImage = styled.img`
   width: auto;
   max-height: 700px;
+
+  @media (max-width: 600px) {
+    max-width: 300px;
+    height: auto;
+  }
 `
 export const Image = styled.img `
     overflow: hidden;
