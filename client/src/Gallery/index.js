@@ -9,7 +9,7 @@ const Gallery = () => {
 const [art, setArt] = useState([]);
 
 useEffect(() => {
-    fetch('/arts/')
+    fetch('/../arts/')
     .then(resp => resp.json())
     .then(data => setArt(data))
 }, [])

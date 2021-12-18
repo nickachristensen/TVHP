@@ -13,7 +13,7 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-      fetch('/products/')
+      fetch('/../products/')
       .then(resp => resp.json())
       .then(data => setProducts(data))
   }, [])
