@@ -10,6 +10,10 @@ export const Content = styled.div`
  font-family: 'boecklins universe';
  text-shadow: 0 0 10px black;
  max-width: 500px;
+
+  @media (max-width: 600px) {
+    max-height: 450px;
+  }
 `
 
 
@@ -88,25 +92,29 @@ export const P = styled.p`
   font-size: 1.5rem;
   text-align: center;
   justify-content: center;
-  padding-top: 5px;
-  padding-bottom: 10px;
   color:white;
   text-shadow: 0 0 5px black;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+    padding: 0px;
+  }
 `
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
-  border-radius: 10px;
   text-shadow: 0 0 5px black;
   border-radius: 10px;
-  margin-top: 10px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
 `
 
 export const FormTitle = styled.h3`
@@ -120,7 +128,9 @@ export const FormTitle = styled.h3`
   -webkit-text-stroke: .1px black;
   text-shadow: 0 0 5px white;
 
-
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
 `
 export const Button = styled.button`
   background-color: black;
@@ -130,8 +140,7 @@ export const Button = styled.button`
   font-size: 1rem;
   font-weight: bold;
   padding: 5px;
-  height: 2rem;
-  margin: 10px;
+  margin-top: 10px;
   font-family: 'boecklins universe';
   box-shadow: 2px 2px 4px white;
   border: 2px solid white;
@@ -141,5 +150,4 @@ export const Button = styled.button`
     color: black;
     border: 2px solid black;
   }
-
   `;

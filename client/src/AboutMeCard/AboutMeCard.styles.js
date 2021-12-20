@@ -93,6 +93,10 @@ export const Title = styled.h3`
   color:white;
   -webkit-text-stroke: .1px black;
   text-shadow: 0 0 5px white;
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
 `
 
 export const P = styled.p`
@@ -106,7 +110,7 @@ export const P = styled.p`
   text-shadow: 0 0 5px black;
 
   @media (max-width: 600px) {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 `
 export const AboutMeImg = styled.img`
@@ -123,7 +127,7 @@ export const AboutMeImg = styled.img`
   border: 2px solid white;
 
   @media (max-width: 600px) {
-    max-width: 300px;
+    max-width: 225px;
   }
 
 `
