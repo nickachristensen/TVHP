@@ -101,7 +101,7 @@ export const Title = styled.h1`
     text-shadow: 0 0 5px white;
 
     @media (max-width: 600px) {
-        font-size: 14vw;
+        font-size: 8vw;
     }
 
 `;
