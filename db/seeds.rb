@@ -31,7 +31,7 @@ Art.create(name: "Freedom Fund Coloring Book Page #1", image: "https://res.cloud
 Art.create(name: "Medea", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1639852538/TVHP/art/35_xog53d.jpg", description: "Acrylic on canvas.  24\" x 24\"", category: "painting")
 Art.create(name: "Andrea's Justice", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1639852538/TVHP/art/41_jbclsp.jpg", description: "Private commission", category: "digital")
 Art.create(name: "Blood Ritual", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1639852536/TVHP/art/38_wieseh.jpg", description: "Pen and ink", category: "paper")
-Art.create(name: "Flowers for Saks", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1639852535/TVHP/art/22_xuuxtc.jpg", description: "Enamel paint on plastic mask case.  6\" x 6\".  Limited series for Saks Fifth Avenue, Columbus, OH")
+Art.create(name: "Flowers for Saks", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1639852535/TVHP/art/22_xuuxtc.jpg", description: "Enamel paint on plastic mask case.  6\" x 6\".  Limited series for Saks Fifth Avenue, Columbus, OH", category: "painting")
 Art.create(name: "Freedom Fund Coloring Book Page #2", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1639852534/TVHP/art/49_c1ertw.jpg", description: "Private commission", category: "digital")
 Art.create(name: "Freedom Fund Coloring Book Page #3", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1639852533/TVHP/art/40_j0yuta.jpg", description: "Private commission", category: "digital")
 Art.create(name: "Do Your Dang Census!", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1639852533/TVHP/art/6_zbjugq.jpg", description: "Private commission", category: "digital")
