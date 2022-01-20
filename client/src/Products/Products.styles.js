@@ -42,6 +42,9 @@ export const Button = styled.button`
 export const ModalImage = styled.img`
   width: auto;
   max-height: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: 600px) {
     max-width: 300px;
@@ -72,10 +75,14 @@ export const ModalTitle = styled.h1`
   font-weight: bold;
   font-family: 'boecklins universe';
   color: white;
+  text-shadow: 0 0 5px black;
+
   `
 
 export const ModalDescription = styled.p`
   font-size: 1.2rem;
   font-family: 'boecklins universe';
   color: white;
+  text-shadow: 0 0 5px black;
+  
   `
