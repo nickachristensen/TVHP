@@ -10,6 +10,7 @@ export const Content = styled.div`
  font-family: 'boecklins universe';
  text-shadow: 0 0 10px black;
  max-width: 500px;
+  z-index: 1;
 
   @media (max-width: 600px) {
     max-height: 450px;
