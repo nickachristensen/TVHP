@@ -4,7 +4,7 @@ import SortArt from '../SortArt';
 
 import BackgroundImg from '../img/IMG_2227.JPG'
 
-import { Wrapper } from './Gallery.styles';
+import { Wrapper, GalleryCards, GalleryButtons } from './Gallery.styles';
 
 const Gallery = () => {
 const [art, setArt] = useState([]);
@@ -28,8 +28,10 @@ const artCards = filteredArt.map(art =>
     return (
  
         <Wrapper img={BackgroundImg}>
+        <GalleryButtons>
         <SortArt handleCategory={handleCategory} filterCategory={filterCategory} art={art}/>
-        {artCards}
+        </GalleryButtons>
+        <GalleryCards>{artCards}</GalleryCards>
         </Wrapper>
 
     );

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Button } from "./SortArt.styles";
+
 function SortArt({ handleCategory, art, filterCategory}) {
 
     function handleClick(e) {
@@ -16,25 +18,22 @@ function SortArt({ handleCategory, art, filterCategory}) {
     const buttons = categories.map(cat => {
       const variant = filterCategory === cat ? "secondary" : "outline-secondary"
       return (
-      <button
+      <Button
         key={cat}
         onClick={handleClick}
         name={cat}
         variant={variant}
         >
-          {cat}
-      </button>
+          {cat.charAt(0).toUpperCase() + cat.slice(1)}
+      </Button>
       )
     })
 
 
     return (
-        <>
-        <h4>Sort By:</h4>
           <div>
             {buttons}
           </div>
-          </>
     )
 }
 
