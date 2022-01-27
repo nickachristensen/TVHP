@@ -25,6 +25,7 @@ export const GalleryButtons = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
-    padding-top: 30px;   
+    padding-top: 30px;
+
 `;
 

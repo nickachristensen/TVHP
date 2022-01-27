@@ -14,6 +14,12 @@ export const Button = styled.button`
         align-content: center;
         -webkit-text-stroke: .1px black;
         text-shadow: 0 0 5px white;
+
+        @media (max-width: 600px) {
+        font-size: 1.5rem;
+        text-shadow: 0 0 3px white;
+        margin: 5px;
+    }
         
 
     &:hover {
